@@ -16,13 +16,13 @@
 ## Installation
 - The application can be launched using VScode.
 - In the termainal window.
+- Navigate to the folder containg the schema.sql then <<bash>> ...'mysql source schema.sql'...
 - Steps to launch program.
 - >>run 'npm init'.
 - >>run 'npm install inquirer@8.2.4'.
 - >>run 'npm install express'.
 - >>run 'npm install mysql2'.
 - >>run 'npm start'.
-
 ## Usage
 - This program will allow a database to be created to store departments, roles, and employees.
 - Initially the main menu will prompt selection of a number of options such as: 'view role', 'view department', 'view employee', 'delete'.
@@ -32,6 +32,8 @@
 ## Credits
 
 Abhudaya Rayamajhi
+
+
 
 ## License
 
