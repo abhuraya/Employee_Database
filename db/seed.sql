@@ -1,0 +1,68 @@
+INSERT INTO department (id, name)
+VALUES 
+(001, "Accounting"),
+(002, "IT"),
+(003, "Legal"),
+(004, "Marketing"),
+(005, "Human Resources"),
+(006, "Maintenence"),
+(007, "Sales"),
+(009, "Research"),
+(010, "Finance");
+
+
+INSERT INTO role (id, title, salary, department_id)
+VALUES
+(001, "Finance Lead", 90000, 010),
+(002, "Research Lead", 90000, 009),
+(003, "Custodian", 40000, 006),
+(004, "Accountant", 80000, 001),
+(005, "Vice President Finance", 70000, 010),
+(006, "Programmer", 90000, 002),
+(007, "IT Lead", 110000, 002),
+(008, "Network Architect", 100000, 002),
+(009, "Paralegal", 50000, 003),
+(010, "Legal Lead", 15000, 003),
+(011, "Arbiter", 13000, 003),
+(012, "Marketing Lead", 100000, 004),
+(013, "Human Resources Lead", 60000, 005),
+(014, "Hiring Manager", 50000, 005),
+(015, "Accounting Lead", 14000, 001),
+(016, "Sales Lead", 80000, 007),
+(017, "Salesman", 40000, 007),
+(018, "Intern (Marketing)", NULL, 004),
+(019, "Intern (Finance)", NULL, 010),
+(020, "Intern (Accounting)", NULL, 001);
+
+INSERT INTO employee (id, first_name, last_name, role_id, mmanager_id)
+VALUES
+(1, "Bill", "Bellichick", 001, NULL),
+(2, "Jim", "Parsons", 009, 6),
+(3, "Tedy", "Brushci", 017, 17),
+(4, "Clark", "Kent", 009, 6),
+(5, "Kunal", "Nayyar", 011, 6),
+(6, "Ellen", "Paige", 010, NULL),
+(7, "Aaron", "Lemarie", 012, NULL),
+(8, "Kelsey", "Sanders", 014, 30),
+(9, "Steve", "Jobs", 017, 17),
+(10, "Harvey", "Specter", 011, 6),
+(11, "Stacy", "Lacey", 006, 19),
+(12, "Asa", "Akira", 005, 1),
+(13, "Alex", "Chambers", 004, 23),
+(14, "John", "Krasinski", 017, 17),
+(15, "Adam", "Lentin", 003, NULL),
+(16, "Karen", "Guberhouse", 004, 23),
+(17, "Richard", "Taylor", 016, NULL),
+(18, "Derek", "Collins", 008, 19),
+(19, "Harim", "Al Sharif", 007, NULL),
+(20, "Sarah", "Raiche", 018, 7),
+(21, "Elizabeth", "Davis", 006, 23),
+(22, "David", "Shrager", 017, 17),
+(23, "Sam", "Kensigton", 015, NULL),
+(24, "Kenneth", "Walker", 019, 1),
+(25, "Aayush", "Karki", 006, 19),
+(26, "Samantha", "Bryce", 004, 23),
+(27, "Chris", "Acres", 002, NULL),
+(28, "Jeremy", "Finely", 006, 19),
+(29, "Kylie", "Kinney", 020, 23),
+(30, "Michel", "Saige", 013, NULL);
